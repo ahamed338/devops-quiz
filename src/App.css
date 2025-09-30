@@ -1,50 +1,9 @@
-.App {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  padding: 20px;
-}
-
-.controls {
-  margin-bottom: 15px;
-}
-
-.question-card {
-  border: 1px solid #ddd;
-  padding: 20px;
-  margin-top: 20px;
-  border-radius: 8px;
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-button {
-  margin: 5px;
-  padding: 10px 15px;
-  border-radius: 5px;
-  border: 1px solid #888;
-  cursor: pointer;
-}
-
-.next-btn {
-  margin-top: 15px;
-  background-color: #007bff;
+button.correct {
+  background-color: #4caf50;
   color: white;
-  border: none;
 }
 
-.feedback {
-  margin-top: 10px;
-  font-weight: bold;
-}
-
-.score {
-  margin-top: 10px;
-  font-weight: bold;
-}
-
-.last-updated {
-  margin-top: 20px;
-  font-size: 0.9rem;
-  color: #555;
+button.wrong {
+  background-color: #f44336;
+  color: white;
 }
