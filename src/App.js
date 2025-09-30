@@ -11,18 +11,22 @@ function App() {
   const [askedQuestions, setAskedQuestions] = useState([]);
 
   const loadQuestion = () => {
-    const filtered = questionsData.filter(q => q.tool === tool && !askedQuestions.includes(q.id));
+    const filtered = questionsData.filter(
+      (q) => q.tool === tool && !askedQuestions.includes(q.id)
+    );
+
     if (filtered.length === 0) {
       alert("🎉 You've answered all questions for this tool! Starting over...");
       setAskedQuestions([]);
       setScore({ correct: 0, attempted: 0 });
       return;
     }
+
     const random = filtered[Math.floor(Math.random() * filtered.length)];
     setQuestion(random);
     setFeedback("");
     setSelectedOption(null);
-    setAskedQuestions(prev => [...prev, random.id]);
+    setAskedQuestions((prev) => [...prev, random.id]);
   };
 
   useEffect(() => {
@@ -34,10 +38,14 @@ function App() {
     const correct = option === question.answer;
     if (correct) {
       setFeedback("✅ Correct!");
-      setScore(prev => ({ ...prev, correct: prev.correct + 1, attempted: prev.attempted + 1 }));
+      setScore((prev) => ({
+        ...prev,
+        correct: prev.correct + 1,
+        attempted: prev.attempted + 1,
+      }));
     } else {
       setFeedback(`❌ Wrong! Correct answer: ${question.answer}`);
-      setScore(prev => ({ ...prev, attempted: prev.attempted + 1 }));
+      setScore((prev) => ({ ...prev, attempted: prev.attempted + 1 }));
     }
   };
 
@@ -52,7 +60,7 @@ function App() {
     <div className="App">
       <h1>DevOps Quiz</h1>
       <label>Select Tool: </label>
-      <select value={tool} onChange={e => setTool(e.target.value)}>
+      <select value={tool} onChange={(e) => setTool(e.target.value)}>
         <option>Terraform</option>
         <option>Kubernetes</option>
         <option>Helm</option>
@@ -61,7 +69,7 @@ function App() {
         <option>GitHub</option>
       </select>
 
-      <p>Score: {score.correct} / {score.attempted}</p>
+      <p className="score">Score: {score.correct} / {score.attempted}</p>
 
       {question && (
         <div className="question-card">
@@ -76,8 +84,10 @@ function App() {
               {opt}
             </button>
           ))}
-          <p>{feedback}</p>
-          <button onClick={loadQuestion}>Next Question</button>
+          <p className="feedback">{feedback}</p>
+          <button className="next-btn" onClick={loadQuestion}>
+            Next Question
+          </button>
         </div>
       )}
     </div>

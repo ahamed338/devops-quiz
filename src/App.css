@@ -1,3 +1,60 @@
+.App {
+  max-width: 650px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+label {
+  font-size: 16px;
+}
+
+select {
+  padding: 5px 10px;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.score {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.question-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 25px;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.question-card h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.question-card button {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 1px solid #888;
+  transition: all 0.2s ease;
+}
+
+.question-card button:hover:not(:disabled) {
+  transform: scale(1.02);
+}
+
 button.correct {
   background-color: #4caf50;
   color: white;
@@ -6,4 +63,21 @@ button.correct {
 button.wrong {
   background-color: #f44336;
   color: white;
+}
+
+.feedback {
+  font-size: 18px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.next-btn {
+  margin-top: 15px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+}
+
+.next-btn:hover {
+  background-color: #1976d2;
 }
