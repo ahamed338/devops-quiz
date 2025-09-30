@@ -1,0 +1,20 @@
+{
+  "name": "devops-quiz",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://ahamed338.github.io/devops-quiz",
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-scripts": "5.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  }
+}

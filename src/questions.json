@@ -1,0 +1,44 @@
+[
+  {
+    "id": "tf-001",
+    "tool": "Terraform",
+    "question": "Which command initializes a Terraform working directory?",
+    "options": ["terraform apply", "terraform init", "terraform plan", "terraform validate"],
+    "answer": "terraform init"
+  },
+  {
+    "id": "k8s-001",
+    "tool": "Kubernetes",
+    "question": "What is the default type of Kubernetes Service?",
+    "options": ["ClusterIP", "NodePort", "LoadBalancer", "ExternalName"],
+    "answer": "ClusterIP"
+  },
+  {
+    "id": "helm-001",
+    "tool": "Helm",
+    "question": "Which file defines default values in a Helm chart?",
+    "options": ["Chart.yaml", "values.yaml", "templates.yaml", "deployment.yaml"],
+    "answer": "values.yaml"
+  },
+  {
+    "id": "ansible-001",
+    "tool": "Ansible",
+    "question": "Which command runs an Ansible playbook?",
+    "options": ["ansible-playbook", "ansible-run", "ansible-execute", "ansible-start"],
+    "answer": "ansible-playbook"
+  },
+  {
+    "id": "ado-001",
+    "tool": "Azure DevOps",
+    "question": "Which Azure DevOps service manages CI/CD pipelines?",
+    "options": ["Repos", "Boards", "Pipelines", "Artifacts"],
+    "answer": "Pipelines"
+  },
+  {
+    "id": "github-001",
+    "tool": "GitHub",
+    "question": "Which file defines GitHub Actions workflows?",
+    "options": [".github/workflows.yml", ".github/actions.yml", ".github/pipelines.yml", ".github/config.yml"],
+    "answer": ".github/workflows.yml"
+  }
+]
