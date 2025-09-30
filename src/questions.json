@@ -761,4 +761,224 @@
     "id": "ans-009",
     "tool": "Ansible",
     "question": "What is Ansible Tower/AWX?",
-    "options": ["Web-based UI and API for Ansible", "Command line tool", "
+    "options": ["Web-based UI and API for Ansible", "Command line tool", "Programming language", "Cloud service"],
+    "answer": "Web-based UI and API for Ansible"
+  },
+  {
+    "id": "ans-010",
+    "tool": "Ansible",
+    "question": "What are Ansible Modules?",
+    "options": ["Reusable units of work", "Code modules", "Hardware modules", "Network modules"],
+    "answer": "Reusable units of work"
+  },
+  {
+    "id": "ans-011",
+    "tool": "Ansible",
+    "question": "What is Ansible Pull?",
+    "options": ["Pull configuration from central server", "Push configuration", "Delete configuration", "Backup configuration"],
+    "answer": "Pull configuration from central server"
+  },
+  {
+    "id": "ans-012",
+    "tool": "Ansible",
+    "question": "What are Ansible Collections?",
+    "options": ["Packaging format for Ansible content", "Data collections", "Log collections", "File collections"],
+    "answer": "Packaging format for Ansible content"
+  },
+  {
+    "id": "ans-013",
+    "tool": "Ansible",
+    "question": "What is Ansible Conditionals?",
+    "options": ["Conditional execution of tasks", "System conditions", "Health conditions", "Network conditions"],
+    "answer": "Conditional execution of tasks"
+  },
+  {
+    "id": "ans-014",
+    "tool": "Ansible",
+    "question": "What are Ansible Loops?",
+    "options": ["Repeat tasks multiple times", "Code loops", "Network loops", "System loops"],
+    "answer": "Repeat tasks multiple times"
+  },
+  {
+    "id": "ans-015",
+    "tool": "Ansible",
+    "question": "What is Ansible Tags?",
+    "options": ["Selectively run parts of playbooks", "Price tags", "Network tags", "Security tags"],
+    "answer": "Selectively run parts of playbooks"
+  },
+  {
+    "id": "ans-016",
+    "tool": "Ansible",
+    "question": "What are Ansible Blocks?",
+    "options": ["Group tasks together", "Code blocks", "Network blocks", "Storage blocks"],
+    "answer": "Group tasks together"
+  },
+  {
+    "id": "ans-017",
+    "tool": "Ansible",
+    "question": "What is Ansible Strategy?",
+    "options": ["How playbook execution is coordinated", "Business strategy", "Security strategy", "Network strategy"],
+    "answer": "How playbook execution is coordinated"
+  },
+  {
+    "id": "ans-018",
+    "tool": "Ansible",
+    "question": "What are Ansible Variables?",
+    "options": ["Store and reuse values", "Math variables", "System variables", "Network variables"],
+    "answer": "Store and reuse values"
+  },
+  {
+    "id": "ans-019",
+    "tool": "Ansible",
+    "question": "What is Ansible Template?",
+    "options": ["Generate files dynamically", "Document template", "Code template", "System template"],
+    "answer": "Generate files dynamically"
+  },
+  {
+    "id": "ans-020",
+    "tool": "Ansible",
+    "question": "What are Ansible Notify?",
+    "options": ["Trigger handler execution", "User notifications", "System alerts", "Email notifications"],
+    "answer": "Trigger handler execution"
+  },
+  {
+    "id": "dd-001",
+    "tool": "Datadog",
+    "question": "What types of monitoring does Datadog provide?",
+    "options": ["Only infrastructure monitoring", "Only application performance monitoring", "Infrastructure, APM, logs, and synthetic monitoring", "Only log management"],
+    "answer": "Infrastructure, APM, logs, and synthetic monitoring"
+  },
+  {
+    "id": "dd-002",
+    "tool": "Datadog",
+    "question": "What is a Datadog Dashboard used for?",
+    "options": ["Code deployment", "Visualizing and correlating metrics from different sources", "Version control", "Container orchestration"],
+    "answer": "Visualizing and correlating metrics from different sources"
+  },
+  {
+    "id": "dd-003",
+    "tool": "Datadog",
+    "question": "What is a Datadog Monitor?",
+    "options": ["A code editor", "A tool that watches metrics and triggers alerts", "A version control system", "A container runtime"],
+    "answer": "A tool that watches metrics and triggers alerts"
+  },
+  {
+    "id": "dd-004",
+    "tool": "Datadog",
+    "question": "What is Datadog APM?",
+    "options": ["Application Performance Monitoring", "Asset Performance Management", "Application Package Manager", "Automated Performance Metrics"],
+    "answer": "Application Performance Monitoring"
+  },
+  {
+    "id": "dd-005",
+    "tool": "Datadog",
+    "question": "What are Datadog Integrations?",
+    "options": ["Pre-built connections to various services and technologies", "Math integrations", "Code integrations", "System integrations"],
+    "answer": "Pre-built connections to various services and technologies"
+  },
+  {
+    "id": "dd-006",
+    "tool": "Datadog",
+    "question": "What is Datadog Log Management?",
+    "options": ["Collect, process, and analyze log data", "Manage log files", "Delete logs", "Archive logs"],
+    "answer": "Collect, process, and analyze log data"
+  },
+  {
+    "id": "dd-007",
+    "tool": "Datadog",
+    "question": "What are Datadog Tags?",
+    "options": ["Key-value pairs for filtering and grouping metrics", "Price tags", "Code tags", "Network tags"],
+    "answer": "Key-value pairs for filtering and grouping metrics"
+  },
+  {
+    "id": "dd-008",
+    "tool": "Datadog",
+    "question": "What is Datadog Synthetic Monitoring?",
+    "options": ["Monitor API endpoints and web applications from various locations", "Artificial monitoring", "Code monitoring", "System monitoring"],
+    "answer": "Monitor API endpoints and web applications from various locations"
+  },
+  {
+    "id": "dd-009",
+    "tool": "Datadog",
+    "question": "What is Datadog Agent?",
+    "options": ["Software that collects and reports metrics", "Security agent", "User agent", "Network agent"],
+    "answer": "Software that collects and reports metrics"
+  },
+  {
+    "id": "dd-010",
+    "tool": "Datadog",
+    "question": "What are Datadog Metrics?",
+    "options": ["Time-series data points representing system measurements", "Math metrics", "Code metrics", "Business metrics"],
+    "answer": "Time-series data points representing system measurements"
+  },
+  {
+    "id": "dd-011",
+    "tool": "Datadog",
+    "question": "What is Datadog Trace?",
+    "options": ["Distributed request tracing for applications", "Error trace", "Code trace", "Network trace"],
+    "answer": "Distributed request tracing for applications"
+  },
+  {
+    "id": "dd-012",
+    "tool": "Datadog",
+    "question": "What are Datadog Events?",
+    "options": ["Records of significant state changes in infrastructure", "Calendar events", "User events", "System events"],
+    "answer": "Records of significant state changes in infrastructure"
+  },
+  {
+    "id": "dd-013",
+    "tool": "Datadog",
+    "question": "What is Datadog Service Level Objective (SLO)?",
+    "options": ["Target level of reliability for a service", "Service level agreement", "System level objective", "Security level objective"],
+    "answer": "Target level of reliability for a service"
+  },
+  {
+    "id": "dd-014",
+    "tool": "Datadog",
+    "question": "What are Datadog Notebooks?",
+    "options": ["Collaborative documents for investigation and reporting", "Code notebooks", "System notebooks", "Network notebooks"],
+    "answer": "Collaborative documents for investigation and reporting"
+  },
+  {
+    "id": "dd-015",
+    "tool": "Datadog",
+    "question": "What is Datadog RUM?",
+    "options": ["Real User Monitoring for front-end performance", "Remote monitoring", "Resource monitoring", "Runtime monitoring"],
+    "answer": "Real User Monitoring for front-end performance"
+  },
+  {
+    "id": "dd-016",
+    "tool": "Datadog",
+    "question": "What are Datadog Security Monitoring?",
+    "options": ["Detect security threats across environment", "Network security", "Physical security", "Code security"],
+    "answer": "Detect security threats across environment"
+  },
+  {
+    "id": "dd-017",
+    "tool": "Datadog",
+    "question": "What is Datadog Network Performance Monitoring?",
+    "options": ["Monitor network traffic between services", "Monitor internet speed", "Monitor network devices", "Monitor wireless networks"],
+    "answer": "Monitor network traffic between services"
+  },
+  {
+    "id": "dd-018",
+    "tool": "Datadog",
+    "question": "What are Datadog Host Maps?",
+    "options": ["Visualize hosts and their metrics", "Network maps", "System maps", "Code maps"],
+    "answer": "Visualize hosts and their metrics"
+  },
+  {
+    "id": "dd-019",
+    "tool": "Datadog",
+    "question": "What is Datadog CI Visibility?",
+    "options": ["Monitor CI/CD pipeline performance", "Code inspection", "System inspection", "Network inspection"],
+    "answer": "Monitor CI/CD pipeline performance"
+  },
+  {
+    "id": "dd-020",
+    "tool": "Datadog",
+    "question": "What are Datadog Watchdog?",
+    "options": ["AI-powered anomaly and outlier detection", "Security watchdog", "System watchdog", "Network watchdog"],
+    "answer": "AI-powered anomaly and outlier detection"
+  }
+]
