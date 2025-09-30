@@ -4,6 +4,10 @@
   padding: 20px;
 }
 
+.controls {
+  margin-bottom: 15px;
+}
+
 .question-card {
   border: 1px solid #ddd;
   padding: 20px;
@@ -20,4 +24,27 @@ button {
   border-radius: 5px;
   border: 1px solid #888;
   cursor: pointer;
+}
+
+.next-btn {
+  margin-top: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.feedback {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.score {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.last-updated {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #555;
 }
