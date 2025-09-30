@@ -81,3 +81,9 @@ button.wrong {
 .next-btn:hover {
   background-color: #1976d2;
 }
+
+.build-time {
+  font-size: 12px;
+  color: #666;
+  margin-top: 30px;
+}

@@ -9,6 +9,14 @@ function App() {
   const [score, setScore] = useState({ correct: 0, attempted: 0 });
   const [selectedOption, setSelectedOption] = useState(null);
   const [askedQuestions, setAskedQuestions] = useState([]);
+  const [buildTime, setBuildTime] = useState("");
+
+  // Load last build time from environment variable
+  useEffect(() => {
+    if (process.env.REACT_APP_BUILD_TIME) {
+      setBuildTime(process.env.REACT_APP_BUILD_TIME);
+    }
+  }, []);
 
   const loadQuestion = () => {
     const filtered = questionsData.filter(
@@ -69,7 +77,9 @@ function App() {
         <option>GitHub</option>
       </select>
 
-      <p className="score">Score: {score.correct} / {score.attempted}</p>
+      <p className="score">
+        Score: {score.correct} / {score.attempted}
+      </p>
 
       {question && (
         <div className="question-card">
@@ -90,6 +100,8 @@ function App() {
           </button>
         </div>
       )}
+
+      {buildTime && <p className="build-time">Last updated: {buildTime}</p>}
     </div>
   );
 }
