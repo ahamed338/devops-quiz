@@ -11,7 +11,7 @@ function App() {
   const [askedQuestions, setAskedQuestions] = useState([]);
   const [buildTime, setBuildTime] = useState("");
 
-  // Load last build time from environment variable
+  // Load timestamp from environment set in GitHub Actions
   useEffect(() => {
     if (process.env.REACT_APP_BUILD_TIME) {
       setBuildTime(process.env.REACT_APP_BUILD_TIME);

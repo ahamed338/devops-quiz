@@ -10,7 +10,6 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "prebuild": "export REACT_APP_BUILD_TIME=\"$(date '+%Y-%m-%d %H:%M:%S')\"",
     "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
