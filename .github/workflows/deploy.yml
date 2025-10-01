@@ -31,13 +31,22 @@ jobs:
           COMMIT_SHA=$(git rev-parse --short HEAD)
           RUN_NUMBER=${{ github.run_number }}
           
-          echo "window.BUILD_INFO = { time: '$BUILD_TIME', commit: '$COMMIT_SHA', run: '$RUN_NUMBER' };" > public/build-info.js
-          echo "Build info created: $BUILD_TIME"
+          # Create the build info file in public folder
+          echo "// Auto-generated build information" > public/build-info.js
+          echo "window.BUILD_INFO = {" >> public/build-info.js
+          echo "  time: '$BUILD_TIME'," >> public/build-info.js
+          echo "  commit: '$COMMIT_SHA'," >> public/build-info.js
+          echo "  run: '$RUN_NUMBER'" >> public/build-info.js
+          echo "};" >> public/build-info.js
           
-      - name: Build app
+          echo "✅ Build info file created at public/build-info.js"
+          echo "Content:"
+          cat public/build-info.js
+          
+      - name: Build React app
         run: npm run build
         
-      - name: Deploy
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

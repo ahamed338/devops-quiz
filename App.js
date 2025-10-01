@@ -9,7 +9,11 @@ function App() {
   const [score, setScore] = useState({ correct: 0, attempted: 0 });
   const [selectedOption, setSelectedOption] = useState(null);
   const [askedQuestions, setAskedQuestions] = useState([]);
-  const [buildInfo, setBuildInfo] = useState({ time: 'Loading...', commit: '', run: '' });
+  const [buildInfo, setBuildInfo] = useState({ 
+    time: new Date().toLocaleString() + ' (Current)', 
+    commit: 'local', 
+    run: 'dev' 
+  });
 
   // Hardcoded tools that match your questions.json
   const availableTools = [
@@ -23,13 +27,19 @@ function App() {
   ];
   
   useEffect(() => {
-    if (window.BUILD_INFO) {
+    console.log('App loaded - checking for build info...');
+    
+    // Multiple ways to check for build info
+    if (typeof window !== 'undefined' && window.BUILD_INFO) {
+      console.log('Build info found:', window.BUILD_INFO);
       setBuildInfo(window.BUILD_INFO);
     } else {
+      console.log('No build info found, using current time');
+      // This will always show at least the current time
       setBuildInfo({
-        time: new Date().toLocaleString() + ' (Live)',
-        commit: 'dev',
-        run: 'local'
+        time: new Date().toLocaleString() + ' (Current)',
+        commit: 'local',
+        run: 'dev'
       });
     }
   }, []);
@@ -114,10 +124,11 @@ function App() {
         </div>
       )}
 
+      {/* Build info - will ALWAYS show something */}
       <p className="build-time">
         {buildInfo.time}
-        {buildInfo.commit && buildInfo.commit !== 'dev' && <span> (Commit: {buildInfo.commit})</span>}
-        {buildInfo.run && buildInfo.run !== 'local' && <span> - Build #{buildInfo.run}</span>}
+        {buildInfo.commit && buildInfo.commit !== 'local' && <span> (Commit: {buildInfo.commit})</span>}
+        {buildInfo.run && buildInfo.run !== 'dev' && <span> - Build #{buildInfo.run}</span>}
       </p>
     </div>
   );
