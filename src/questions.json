@@ -978,5 +978,726 @@
     "question": "What are Datadog Watchdog?",
     "options": ["AI-powered anomaly and outlier detection", "Security watchdog", "System watchdog", "Network watchdog"],
     "answer": "AI-powered anomaly and outlier detection"
+  },
+
+  {
+    "id": "devops-001",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What is DevOps?",
+    "options": [
+      "A set of practices combining software development and IT operations",
+      "A programming language",
+      "A cloud provider",
+      "A testing framework"
+    ],
+    "answer": "A set of practices combining software development and IT operations"
+  },
+  {
+    "id": "devops-002",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What are the main goals of DevOps?",
+    "options": [
+      "Faster delivery of software, improved collaboration, automation, and continuous feedback",
+      "Slower delivery and manual testing",
+      "Replacing developers with AI",
+      "Focusing only on coding without operations"
+    ],
+    "answer": "Faster delivery of software, improved collaboration, automation, and continuous feedback"
+  },
+  {
+    "id": "devops-003",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What are the key components of DevOps?",
+    "options": [
+      "CI/CD, Infrastructure as Code, Monitoring and Logging, Collaboration",
+      "Manual deployments, silos, and ticketing",
+      "Only containerization",
+      "Waterfall methodology"
+    ],
+    "answer": "CI/CD, Infrastructure as Code, Monitoring and Logging, Collaboration"
+  },
+  {
+    "id": "devops-004",
+    "tool": "DevOpsCoreConcepts",
+    "question": "How does DevOps differ from traditional IT operations?",
+    "options": [
+      "DevOps uses automation, collaboration, and continuous feedback, while traditional IT is siloed and manual",
+      "DevOps is slower than traditional IT",
+      "Traditional IT has better scalability",
+      "Both are the same"
+    ],
+    "answer": "DevOps uses automation, collaboration, and continuous feedback, while traditional IT is siloed and manual"
+  },
+  {
+    "id": "devops-005",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What is Continuous Integration (CI)?",
+    "options": [
+      "A practice where developers frequently integrate code into a shared repository with automated testing",
+      "Automated release of code to production",
+      "Manual code review meetings",
+      "Version control system"
+    ],
+    "answer": "A practice where developers frequently integrate code into a shared repository with automated testing"
+  },
+  {
+    "id": "devops-006",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What is Continuous Deployment (CD)?",
+    "options": [
+      "Automated release of validated code changes into production",
+      "Deploying code once a year",
+      "Only testing code",
+      "Manual rollback strategies"
+    ],
+    "answer": "Automated release of validated code changes into production"
+  },
+  {
+    "id": "devops-007",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What is Infrastructure as Code (IaC)?",
+    "options": [
+      "Managing infrastructure using code for automation and consistency",
+      "Manually configuring servers",
+      "Code for frontend development only",
+      "Testing methodology"
+    ],
+    "answer": "Managing infrastructure using code for automation and consistency"
+  },
+  {
+    "id": "devops-008",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What is version control, and why is it important?",
+    "options": [
+      "A system that tracks code changes, enables collaboration and rollback",
+      "A tool for compiling code",
+      "An automation tool like Jenkins",
+      "A monitoring dashboard"
+    ],
+    "answer": "A system that tracks code changes, enables collaboration and rollback"
+  },
+  {
+    "id": "devops-009",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What are some popular version control tools?",
+    "options": [
+      "Git, GitHub, GitLab, Bitbucket, Subversion (SVN)",
+      "Excel and Word",
+      "Docker and Kubernetes",
+      "Ansible and Puppet"
+    ],
+    "answer": "Git, GitHub, GitLab, Bitbucket, Subversion (SVN)"
+  },
+  {
+    "id": "devops-010",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What is a DevOps pipeline?",
+    "options": [
+      "An automated process including build, test, deploy, and monitor stages",
+      "A manual process for code deployment",
+      "A database schema",
+      "A code editor feature"
+    ],
+    "answer": "An automated process including build, test, deploy, and monitor stages"
+  },
+  {
+    "id": "devops-011",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What is DevOps?",
+    "options": [
+      "A set of practices combining software development and IT operations",
+      "A programming language",
+      "A cloud provider",
+      "A testing framework"
+    ],
+    "answer": "A set of practices combining software development and IT operations"
+  },
+  {
+    "id": "devops-012",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What are the main goals of DevOps?",
+    "options": [
+      "Faster delivery of software, improved collaboration, automation, and continuous feedback",
+      "Slower delivery and manual testing",
+      "Replacing developers with AI",
+      "Focusing only on coding without operations"
+    ],
+    "answer": "Faster delivery of software, improved collaboration, automation, and continuous feedback"
+  },
+  {
+    "id": "devops-013",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What are the key components of DevOps?",
+    "options": [
+      "CI/CD, Infrastructure as Code, Monitoring and Logging, Collaboration",
+      "Manual deployments, silos, and ticketing",
+      "Only containerization",
+      "Waterfall methodology"
+    ],
+    "answer": "CI/CD, Infrastructure as Code, Monitoring and Logging, Collaboration"
+  },
+  {
+    "id": "devops-014",
+    "tool": "DevOpsCoreConcepts",
+    "question": "How does DevOps differ from traditional IT operations?",
+    "options": [
+      "DevOps uses automation, collaboration, and continuous feedback, while traditional IT is siloed and manual",
+      "DevOps is slower than traditional IT",
+      "Traditional IT has better scalability",
+      "Both are the same"
+    ],
+    "answer": "DevOps uses automation, collaboration, and continuous feedback, while traditional IT is siloed and manual"
+  },
+  {
+    "id": "devops-015",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What is Continuous Integration (CI)?",
+    "options": [
+      "A practice where developers frequently integrate code into a shared repository with automated testing",
+      "Automated release of code to production",
+      "Manual code review meetings",
+      "Version control system"
+    ],
+    "answer": "A practice where developers frequently integrate code into a shared repository with automated testing"
+  },
+  {
+    "id": "devops-016",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What is Continuous Deployment (CD)?",
+    "options": [
+      "Automated release of validated code changes into production",
+      "Deploying code once a year",
+      "Only testing code",
+      "Manual rollback strategies"
+    ],
+    "answer": "Automated release of validated code changes into production"
+  },
+  {
+    "id": "devops-017",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What is Infrastructure as Code (IaC)?",
+    "options": [
+      "Managing infrastructure using code for automation and consistency",
+      "Manually configuring servers",
+      "Code for frontend development only",
+      "Testing methodology"
+    ],
+    "answer": "Managing infrastructure using code for automation and consistency"
+  },
+  {
+    "id": "devops-018",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What is version control, and why is it important?",
+    "options": [
+      "A system that tracks code changes, enables collaboration and rollback",
+      "A tool for compiling code",
+      "An automation tool like Jenkins",
+      "A monitoring dashboard"
+    ],
+    "answer": "A system that tracks code changes, enables collaboration and rollback"
+  },
+  {
+    "id": "devops-019",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What are some popular version control tools?",
+    "options": [
+      "Git, GitHub, GitLab, Bitbucket, Subversion (SVN)",
+      "Excel and Word",
+      "Docker and Kubernetes",
+      "Ansible and Puppet"
+    ],
+    "answer": "Git, GitHub, GitLab, Bitbucket, Subversion (SVN)"
+  },
+  {
+    "id": "devops-020",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What is a DevOps pipeline?",
+    "options": [
+      "An automated process including build, test, deploy, and monitor stages",
+      "A manual process for code deployment",
+      "A database schema",
+      "A code editor feature"
+    ],
+    "answer": "An automated process including build, test, deploy, and monitor stages"
+  },
+  {
+    "id": "devops-021",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What is DevOps?",
+    "options": [
+      "A set of practices combining software development and IT operations",
+      "A programming language",
+      "A cloud provider",
+      "A testing framework"
+    ],
+    "answer": "A set of practices combining software development and IT operations"
+  },
+  {
+    "id": "devops-022",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What are the main goals of DevOps?",
+    "options": [
+      "Faster delivery of software, improved collaboration, automation, and continuous feedback",
+      "Slower delivery and manual testing",
+      "Replacing developers with AI",
+      "Focusing only on coding without operations"
+    ],
+    "answer": "Faster delivery of software, improved collaboration, automation, and continuous feedback"
+  },
+  {
+    "id": "devops-023",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What are the key components of DevOps?",
+    "options": [
+      "CI/CD, Infrastructure as Code, Monitoring and Logging, Collaboration",
+      "Manual deployments, silos, and ticketing",
+      "Only containerization",
+      "Waterfall methodology"
+    ],
+    "answer": "CI/CD, Infrastructure as Code, Monitoring and Logging, Collaboration"
+  },
+  {
+    "id": "devops-024",
+    "tool": "DevOpsCoreConcepts",
+    "question": "How does DevOps differ from traditional IT operations?",
+    "options": [
+      "DevOps uses automation, collaboration, and continuous feedback, while traditional IT is siloed and manual",
+      "DevOps is slower than traditional IT",
+      "Traditional IT has better scalability",
+      "Both are the same"
+    ],
+    "answer": "DevOps uses automation, collaboration, and continuous feedback, while traditional IT is siloed and manual"
+  },
+  {
+    "id": "devops-025",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What is Continuous Integration (CI)?",
+    "options": [
+      "A practice where developers frequently integrate code into a shared repository with automated testing",
+      "Automated release of code to production",
+      "Manual code review meetings",
+      "Version control system"
+    ],
+    "answer": "A practice where developers frequently integrate code into a shared repository with automated testing"
+  },
+  {
+    "id": "devops-026",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What is Continuous Deployment (CD)?",
+    "options": [
+      "Automated release of validated code changes into production",
+      "Deploying code once a year",
+      "Only testing code",
+      "Manual rollback strategies"
+    ],
+    "answer": "Automated release of validated code changes into production"
+  },
+  {
+    "id": "devops-027",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What is Infrastructure as Code (IaC)?",
+    "options": [
+      "Managing infrastructure using code for automation and consistency",
+      "Manually configuring servers",
+      "Code for frontend development only",
+      "Testing methodology"
+    ],
+    "answer": "Managing infrastructure using code for automation and consistency"
+  },
+  {
+    "id": "devops-028",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What is version control, and why is it important?",
+    "options": [
+      "A system that tracks code changes, enables collaboration and rollback",
+      "A tool for compiling code",
+      "An automation tool like Jenkins",
+      "A monitoring dashboard"
+    ],
+    "answer": "A system that tracks code changes, enables collaboration and rollback"
+  },
+  {
+    "id": "devops-029",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What are some popular version control tools?",
+    "options": [
+      "Git, GitHub, GitLab, Bitbucket, Subversion (SVN)",
+      "Excel and Word",
+      "Docker and Kubernetes",
+      "Ansible and Puppet"
+    ],
+    "answer": "Git, GitHub, GitLab, Bitbucket, Subversion (SVN)"
+  },
+  {
+    "id": "devops-030",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What is a DevOps pipeline?",
+    "options": [
+      "An automated process including build, test, deploy, and monitor stages",
+      "A manual process for code deployment",
+      "A database schema",
+      "A code editor feature"
+    ],
+    "answer": "An automated process including build, test, deploy, and monitor stages"
+  },
+  {
+    "id": "devops-031",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What is DevOps?",
+    "options": [
+      "A set of practices combining software development and IT operations",
+      "A programming language",
+      "A cloud provider",
+      "A testing framework"
+    ],
+    "answer": "A set of practices combining software development and IT operations"
+  },
+  {
+    "id": "devops-032",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What are the main goals of DevOps?",
+    "options": [
+      "Faster delivery of software, improved collaboration, automation, and continuous feedback",
+      "Slower delivery and manual testing",
+      "Replacing developers with AI",
+      "Focusing only on coding without operations"
+    ],
+    "answer": "Faster delivery of software, improved collaboration, automation, and continuous feedback"
+  },
+  {
+    "id": "devops-033",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What are the key components of DevOps?",
+    "options": [
+      "CI/CD, Infrastructure as Code, Monitoring and Logging, Collaboration",
+      "Manual deployments, silos, and ticketing",
+      "Only containerization",
+      "Waterfall methodology"
+    ],
+    "answer": "CI/CD, Infrastructure as Code, Monitoring and Logging, Collaboration"
+  },
+  {
+    "id": "devops-034",
+    "tool": "DevOpsCoreConcepts",
+    "question": "How does DevOps differ from traditional IT operations?",
+    "options": [
+      "DevOps uses automation, collaboration, and continuous feedback, while traditional IT is siloed and manual",
+      "DevOps is slower than traditional IT",
+      "Traditional IT has better scalability",
+      "Both are the same"
+    ],
+    "answer": "DevOps uses automation, collaboration, and continuous feedback, while traditional IT is siloed and manual"
+  },
+  {
+    "id": "devops-035",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What is Continuous Integration (CI)?",
+    "options": [
+      "A practice where developers frequently integrate code into a shared repository with automated testing",
+      "Automated release of code to production",
+      "Manual code review meetings",
+      "Version control system"
+    ],
+    "answer": "A practice where developers frequently integrate code into a shared repository with automated testing"
+  },
+  {
+    "id": "devops-036",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What is Continuous Deployment (CD)?",
+    "options": [
+      "Automated release of validated code changes into production",
+      "Deploying code once a year",
+      "Only testing code",
+      "Manual rollback strategies"
+    ],
+    "answer": "Automated release of validated code changes into production"
+  },
+  {
+    "id": "devops-037",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What is Infrastructure as Code (IaC)?",
+    "options": [
+      "Managing infrastructure using code for automation and consistency",
+      "Manually configuring servers",
+      "Code for frontend development only",
+      "Testing methodology"
+    ],
+    "answer": "Managing infrastructure using code for automation and consistency"
+  },
+  {
+    "id": "devops-038",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What is version control, and why is it important?",
+    "options": [
+      "A system that tracks code changes, enables collaboration and rollback",
+      "A tool for compiling code",
+      "An automation tool like Jenkins",
+      "A monitoring dashboard"
+    ],
+    "answer": "A system that tracks code changes, enables collaboration and rollback"
+  },
+  {
+    "id": "devops-039",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What are some popular version control tools?",
+    "options": [
+      "Git, GitHub, GitLab, Bitbucket, Subversion (SVN)",
+      "Excel and Word",
+      "Docker and Kubernetes",
+      "Ansible and Puppet"
+    ],
+    "answer": "Git, GitHub, GitLab, Bitbucket, Subversion (SVN)"
+  },
+  {
+    "id": "devops-040",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What is a DevOps pipeline?",
+    "options": [
+      "An automated process including build, test, deploy, and monitor stages",
+      "A manual process for code deployment",
+      "A database schema",
+      "A code editor feature"
+    ],
+    "answer": "An automated process including build, test, deploy, and monitor stages"
+  },
+  {
+    "id": "devops-041",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What is DevOps?",
+    "options": [
+      "A set of practices combining software development and IT operations",
+      "A programming language",
+      "A cloud provider",
+      "A testing framework"
+    ],
+    "answer": "A set of practices combining software development and IT operations"
+  },
+  {
+    "id": "devops-042",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What are the main goals of DevOps?",
+    "options": [
+      "Faster delivery of software, improved collaboration, automation, and continuous feedback",
+      "Slower delivery and manual testing",
+      "Replacing developers with AI",
+      "Focusing only on coding without operations"
+    ],
+    "answer": "Faster delivery of software, improved collaboration, automation, and continuous feedback"
+  },
+  {
+    "id": "devops-043",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What are the key components of DevOps?",
+    "options": [
+      "CI/CD, Infrastructure as Code, Monitoring and Logging, Collaboration",
+      "Manual deployments, silos, and ticketing",
+      "Only containerization",
+      "Waterfall methodology"
+    ],
+    "answer": "CI/CD, Infrastructure as Code, Monitoring and Logging, Collaboration"
+  },
+  {
+    "id": "devops-044",
+    "tool": "DevOpsCoreConcepts",
+    "question": "How does DevOps differ from traditional IT operations?",
+    "options": [
+      "DevOps uses automation, collaboration, and continuous feedback, while traditional IT is siloed and manual",
+      "DevOps is slower than traditional IT",
+      "Traditional IT has better scalability",
+      "Both are the same"
+    ],
+    "answer": "DevOps uses automation, collaboration, and continuous feedback, while traditional IT is siloed and manual"
+  },
+  {
+    "id": "devops-045",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What is Continuous Integration (CI)?",
+    "options": [
+      "A practice where developers frequently integrate code into a shared repository with automated testing",
+      "Automated release of code to production",
+      "Manual code review meetings",
+      "Version control system"
+    ],
+    "answer": "A practice where developers frequently integrate code into a shared repository with automated testing"
+  },
+  {
+    "id": "devops-046",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What is Continuous Deployment (CD)?",
+    "options": [
+      "Automated release of validated code changes into production",
+      "Deploying code once a year",
+      "Only testing code",
+      "Manual rollback strategies"
+    ],
+    "answer": "Automated release of validated code changes into production"
+  },
+  {
+    "id": "devops-047",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What is Infrastructure as Code (IaC)?",
+    "options": [
+      "Managing infrastructure using code for automation and consistency",
+      "Manually configuring servers",
+      "Code for frontend development only",
+      "Testing methodology"
+    ],
+    "answer": "Managing infrastructure using code for automation and consistency"
+  },
+  {
+    "id": "devops-048",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What is version control, and why is it important?",
+    "options": [
+      "A system that tracks code changes, enables collaboration and rollback",
+      "A tool for compiling code",
+      "An automation tool like Jenkins",
+      "A monitoring dashboard"
+    ],
+    "answer": "A system that tracks code changes, enables collaboration and rollback"
+  },
+  {
+    "id": "devops-049",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What are some popular version control tools?",
+    "options": [
+      "Git, GitHub, GitLab, Bitbucket, Subversion (SVN)",
+      "Excel and Word",
+      "Docker and Kubernetes",
+      "Ansible and Puppet"
+    ],
+    "answer": "Git, GitHub, GitLab, Bitbucket, Subversion (SVN)"
+  },
+  {
+    "id": "devops-050",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What is a DevOps pipeline?",
+    "options": [
+      "An automated process including build, test, deploy, and monitor stages",
+      "A manual process for code deployment",
+      "A database schema",
+      "A code editor feature"
+    ],
+    "answer": "An automated process including build, test, deploy, and monitor stages"
+  },
+  {
+    "id": "devops-051",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What is DevOps?",
+    "options": [
+      "A set of practices combining software development and IT operations",
+      "A programming language",
+      "A cloud provider",
+      "A testing framework"
+    ],
+    "answer": "A set of practices combining software development and IT operations"
+  },
+  {
+    "id": "devops-052",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What are the main goals of DevOps?",
+    "options": [
+      "Faster delivery of software, improved collaboration, automation, and continuous feedback",
+      "Slower delivery and manual testing",
+      "Replacing developers with AI",
+      "Focusing only on coding without operations"
+    ],
+    "answer": "Faster delivery of software, improved collaboration, automation, and continuous feedback"
+  },
+  {
+    "id": "devops-053",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What are the key components of DevOps?",
+    "options": [
+      "CI/CD, Infrastructure as Code, Monitoring and Logging, Collaboration",
+      "Manual deployments, silos, and ticketing",
+      "Only containerization",
+      "Waterfall methodology"
+    ],
+    "answer": "CI/CD, Infrastructure as Code, Monitoring and Logging, Collaboration"
+  },
+  {
+    "id": "devops-054",
+    "tool": "DevOpsCoreConcepts",
+    "question": "How does DevOps differ from traditional IT operations?",
+    "options": [
+      "DevOps uses automation, collaboration, and continuous feedback, while traditional IT is siloed and manual",
+      "DevOps is slower than traditional IT",
+      "Traditional IT has better scalability",
+      "Both are the same"
+    ],
+    "answer": "DevOps uses automation, collaboration, and continuous feedback, while traditional IT is siloed and manual"
+  },
+  {
+    "id": "devops-055",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What is Continuous Integration (CI)?",
+    "options": [
+      "A practice where developers frequently integrate code into a shared repository with automated testing",
+      "Automated release of code to production",
+      "Manual code review meetings",
+      "Version control system"
+    ],
+    "answer": "A practice where developers frequently integrate code into a shared repository with automated testing"
+  },
+  {
+    "id": "devops-056",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What is Continuous Deployment (CD)?",
+    "options": [
+      "Automated release of validated code changes into production",
+      "Deploying code once a year",
+      "Only testing code",
+      "Manual rollback strategies"
+    ],
+    "answer": "Automated release of validated code changes into production"
+  },
+  {
+    "id": "devops-057",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What is Infrastructure as Code (IaC)?",
+    "options": [
+      "Managing infrastructure using code for automation and consistency",
+      "Manually configuring servers",
+      "Code for frontend development only",
+      "Testing methodology"
+    ],
+    "answer": "Managing infrastructure using code for automation and consistency"
+  },
+  {
+    "id": "devops-058",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What is version control, and why is it important?",
+    "options": [
+      "A system that tracks code changes, enables collaboration and rollback",
+      "A tool for compiling code",
+      "An automation tool like Jenkins",
+      "A monitoring dashboard"
+    ],
+    "answer": "A system that tracks code changes, enables collaboration and rollback"
+  },
+  {
+    "id": "devops-059",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What are some popular version control tools?",
+    "options": [
+      "Git, GitHub, GitLab, Bitbucket, Subversion (SVN)",
+      "Excel and Word",
+      "Docker and Kubernetes",
+      "Ansible and Puppet"
+    ],
+    "answer": "Git, GitHub, GitLab, Bitbucket, Subversion (SVN)"
+  },
+  {
+    "id": "devops-060",
+    "tool": "DevOpsCoreConcepts",
+    "question": "What is a DevOps pipeline?",
+    "options": [
+      "An automated process including build, test, deploy, and monitor stages",
+      "A manual process for code deployment",
+      "A database schema",
+      "A code editor feature"
+    ],
+    "answer": "An automated process including build, test, deploy, and monitor stages"
   }
 ]

@@ -23,7 +23,8 @@ function App() {
     "Ansible",
     "Git",
     "GitHub Administration",
-    "Datadog"
+    "Datadog",
+    "DevOpsCoreConcepts"
   ];
   
   useEffect(() => {
