@@ -1,21 +1,18 @@
 name: Deploy React App to GitHub Pages
 
-permissions:
-  contents: write
-  pages: write
-  id-token: write
-
 on:
   push:
     branches:
-      - main  # Deploy on every push to main
+      - main
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
 
     steps:
       # Step 1: Checkout code
@@ -35,25 +32,14 @@ jobs:
       # Step 4: Build React app and set timestamp, commit info and run number
       - name: Build with build metadata
         run: |
-          # Use ISO 8601 UTC timestamp so it's unambiguous
           echo "REACT_APP_BUILD_TIME=$(date -u +'%Y-%m-%dT%H:%M:%SZ')" >> $GITHUB_ENV
-          # Short commit SHA for linking/debugging
           echo "REACT_APP_COMMIT_SHA=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
-          # GitHub Actions run number for traceability
           echo "REACT_APP_RUN_NUMBER=${{ github.run_number }}" >> $GITHUB_ENV
           npm run build
 
-      # Step 5: Setup Pages
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
-      # Step 6: Upload artifact
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      # Step 5: Deploy to GitHub Pages
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          path: ./build
-
-      # Step 7: Deploy to GitHub Pages
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
