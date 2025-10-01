@@ -10,11 +10,19 @@ function App() {
   const [selectedOption, setSelectedOption] = useState(null);
   const [askedQuestions, setAskedQuestions] = useState([]);
   const [buildTime, setBuildTime] = useState("");
+  const [commitSha, setCommitSha] = useState("");
+  const [runNumber, setRunNumber] = useState("");
 
   // Load timestamp from environment set in GitHub Actions
   useEffect(() => {
     if (process.env.REACT_APP_BUILD_TIME) {
       setBuildTime(process.env.REACT_APP_BUILD_TIME);
+    }
+    if (process.env.REACT_APP_COMMIT_SHA) {
+      setCommitSha(process.env.REACT_APP_COMMIT_SHA);
+    }
+    if (process.env.REACT_APP_RUN_NUMBER) {
+      setRunNumber(process.env.REACT_APP_RUN_NUMBER);
     }
   }, []);
 
@@ -101,7 +109,13 @@ function App() {
         </div>
       )}
 
-      {buildTime && <p className="build-time">Last updated: {buildTime}</p>}
+      {buildTime && (
+        <p className="build-time">
+          Last updated: {buildTime}
+          {commitSha && <span> — {commitSha}</span>}
+          {runNumber && <span> (run #{runNumber})</span>}
+        </p>
+      )}
     </div>
   );
 }

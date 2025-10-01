@@ -23,15 +23,25 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # Step 4: Build React app and set timestamp
-      - name: Build with timestamp
+      # Step 4: Build React app and set timestamp, commit info and run number
+      - name: Build with build metadata
         run: |
-          echo "REACT_APP_BUILD_TIME=$(date '+%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
+          # Use ISO 8601 UTC timestamp so it's unambiguous
+          echo "REACT_APP_BUILD_TIME=$(date -u +'%Y-%m-%dT%H:%M:%SZ')" >> $GITHUB_ENV
+          # Short commit SHA for linking/debugging
+          echo "REACT_APP_COMMIT_SHA=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
+          # GitHub Actions run number for traceability
+          echo "REACT_APP_RUN_NUMBER=${{ github.run_number }}" >> $GITHUB_ENV
           npm run build
 
-      # Step 5: Deploy to GitHub Pages using PAT
+      # Step 5: Deploy to GitHub Pages using the built-in GITHUB_TOKEN
+      - name: Configure git for deployment
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GH_PAT }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
