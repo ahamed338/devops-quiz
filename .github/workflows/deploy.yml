@@ -1,7 +1,7 @@
 name: Deploy React App to GitHub Pages
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -13,20 +13,24 @@ on:
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       # Step 1: Checkout code
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       # Step 2: Set up Node.js
       - name: Use Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 18
+          cache: 'npm'
 
       # Step 3: Install dependencies
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       # Step 4: Build React app and set timestamp, commit info and run number
       - name: Build with build metadata
@@ -39,14 +43,17 @@ jobs:
           echo "REACT_APP_RUN_NUMBER=${{ github.run_number }}" >> $GITHUB_ENV
           npm run build
 
-      # Step 5: Deploy to GitHub Pages using the built-in GITHUB_TOKEN
-      - name: Configure git for deployment
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      # Step 5: Setup Pages
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+      # Step 6: Upload artifact
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+          path: ./build
+
+      # Step 7: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
