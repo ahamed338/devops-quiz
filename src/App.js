@@ -9,20 +9,23 @@ function App() {
   const [score, setScore] = useState({ correct: 0, attempted: 0 });
   const [selectedOption, setSelectedOption] = useState(null);
   const [askedQuestions, setAskedQuestions] = useState([]);
-  const [buildInfo, setBuildInfo] = useState(null);
+  const [buildInfo, setBuildInfo] = useState({ time: 'Loading...', commit: '', run: '' });
 
+  // Get available tools from questions data
+  const availableTools = [...new Set(questionsData.map(q => q.tool))];
+  
   useEffect(() => {
-    // Check for build info in global variable
+    // Check for build info in multiple ways
     if (window.BUILD_INFO) {
-      console.log('Build info found:', window.BUILD_INFO);
+      console.log('Build info found in window:', window.BUILD_INFO);
       setBuildInfo(window.BUILD_INFO);
     } else {
-      console.log('Build info not found in window.BUILD_INFO');
-      // Fallback to current time
+      console.log('No build info found, using fallback');
+      // Use a simple fallback that will always show
       setBuildInfo({
-        time: new Date().toLocaleString() + ' (fallback)',
-        commit: 'unknown',
-        run: 'unknown'
+        time: new Date().toLocaleString() + ' (Live)',
+        commit: 'dev',
+        run: 'local'
       });
     }
   }, []);
@@ -78,13 +81,9 @@ function App() {
       <h1>DevOps Quiz</h1>
       <label>Select Tool: </label>
       <select value={tool} onChange={(e) => setTool(e.target.value)}>
-        <option>Terraform</option>
-        <option>Kubernetes</option>
-        <option>Helm</option>
-        <option>Ansible</option>
-        <option>Git</option>
-        <option>GitHub Administration</option>
-        <option>Datadog</option>
+        {availableTools.map(tool => (
+          <option key={tool} value={tool}>{tool}</option>
+        ))}
       </select>
 
       <p className="score">
@@ -111,17 +110,11 @@ function App() {
         </div>
       )}
 
-      {/* Build info display */}
+      {/* Build info display - will always show something */}
       <p className="build-time">
-        {buildInfo ? (
-          <>
-            Last deployed: {buildInfo.time}
-            {buildInfo.commit && buildInfo.commit !== 'unknown' && <span> (Commit: {buildInfo.commit})</span>}
-            {buildInfo.run && buildInfo.run !== 'unknown' && <span> - Build #{buildInfo.run}</span>}
-          </>
-        ) : (
-          "Loading build info..."
-        )}
+        {buildInfo.time}
+        {buildInfo.commit && buildInfo.commit !== 'dev' && <span> (Commit: {buildInfo.commit})</span>}
+        {buildInfo.run && buildInfo.run !== 'local' && <span> - Build #{buildInfo.run}</span>}
       </p>
     </div>
   );

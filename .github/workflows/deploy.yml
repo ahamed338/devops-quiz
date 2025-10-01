@@ -25,38 +25,33 @@ jobs:
       - name: Install dependencies
         run: npm ci
         
-      - name: Create global build info
+      - name: Create and inject build info
         run: |
           BUILD_TIME=$(date -u +'%Y-%m-%d %H:%M:%S UTC')
           COMMIT_SHA=$(git rev-parse --short HEAD)
           RUN_NUMBER=${{ github.run_number }}
           
-          # Create a script that will be loaded before React
-          cat > public/build-info.js << 'EOF'
-          // Auto-generated build info - loaded before React app
-          window.BUILD_INFO = {
-            time: 'BUILD_TIME_PLACEHOLDER',
-            commit: 'COMMIT_SHA_PLACEHOLDER',
-            run: 'RUN_NUMBER_PLACEHOLDER'
-          };
-          EOF
+          # Create build info as a simple JavaScript file
+          echo "// Build information" > public/build-info.js
+          echo "window.BUILD_INFO = {" >> public/build-info.js
+          echo "  time: '$BUILD_TIME'," >> public/build-info.js
+          echo "  commit: '$COMMIT_SHA'," >> public/build-info.js
+          echo "  run: '$RUN_NUMBER'" >> public/build-info.js
+          echo "};" >> public/build-info.js
           
-          # Replace placeholders with actual values
-          sed -i "s/BUILD_TIME_PLACEHOLDER/$BUILD_TIME/g" public/build-info.js
-          sed -i "s/COMMIT_SHA_PLACEHOLDER/$COMMIT_SHA/g" public/build-info.js
-          sed -i "s/RUN_NUMBER_PLACEHOLDER/$RUN_NUMBER/g" public/build-info.js
-          
-          echo "Global build info created"
-          
-      - name: Add script tag to HTML
-        run: |
-          # Add the script tag to load build-info.js before the React app
-          sed -i 's|</head>|<script src="%PUBLIC_URL%/build-info.js"></script></head>|' public/index.html
-          echo "Script tag added to HTML"
+          echo "Build info file created with content:"
+          cat public/build-info.js
           
       - name: Build app
         run: npm run build
         
+      - name: Verify build output
+        run: |
+          echo "Checking if build-info.js exists in build folder:"
+          find build/ -name "build-info.js" || echo "build-info.js not found in build folder"
+          echo "Build folder contents:"
+          ls -la build/
+          
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
