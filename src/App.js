@@ -24,7 +24,8 @@ function App() {
     "Git",
     "GitHub Administration",
     "Datadog",
-    "DevOpsCoreConcepts"
+    "DevOpsCoreConcepts",
+    "Cloud"
   ];
   
   useEffect(() => {

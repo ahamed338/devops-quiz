@@ -1699,5 +1699,583 @@
       "A code editor feature"
     ],
     "answer": "An automated process including build, test, deploy, and monitor stages"
-  }
+  },
+
+
+    {
+        "id": 1,
+        "tool": "Cloud",
+        "question": "What is cloud computing?",
+        "answer": "Cloud computing is the on-demand delivery of computing services such as servers, storage, databases, networking, and software over the internet.",
+        "options": [
+            "A mobile-only feature unrelated to cloud.",
+            "A networking concept unrelated to cloud.",
+            "A physical server kept on-premises only.",
+            "Cloud computing is the on-demand delivery of computing services such as servers, storage, databases, networking, and software over the internet."
+        ]
+    },
+    {
+        "id": 2,
+        "tool": "Cloud",
+        "question": "What are the different types of cloud computing?",
+        "answer": "Public Cloud, Private Cloud, Hybrid Cloud",
+        "options": [
+            "A networking concept unrelated to cloud.",
+            "A physical server kept on-premises only.",
+            "Public Cloud, Private Cloud, Hybrid Cloud",
+            "A mobile-only feature unrelated to cloud."
+        ]
+    },
+    {
+        "id": 3,
+        "tool": "Cloud",
+        "question": "What are the benefits of cloud computing?",
+        "answer": "Scalability, Cost Efficiency, Flexibility, Disaster Recovery",
+        "options": [
+            "A mobile-only feature unrelated to cloud.",
+            "A physical server kept on-premises only.",
+            "Scalability, Cost Efficiency, Flexibility, Disaster Recovery",
+            "A networking concept unrelated to cloud."
+        ]
+    },
+    {
+        "id": 4,
+        "tool": "Cloud",
+        "question": "What are the different cloud service models?",
+        "answer": "IaaS, PaaS, SaaS",
+        "options": [
+            "A physical server kept on-premises only.",
+            "IaaS, PaaS, SaaS",
+            "A mobile-only feature unrelated to cloud.",
+            "A networking concept unrelated to cloud."
+        ]
+    },
+    {
+        "id": 5,
+        "tool": "Cloud",
+        "question": "What is serverless computing?",
+        "answer": "Serverless computing allows developers to run applications without managing infrastructure. Examples include AWS Lambda, Azure Functions.",
+        "options": [
+            "A networking concept unrelated to cloud.",
+            "A mobile-only feature unrelated to cloud.",
+            "A physical server kept on-premises only.",
+            "Serverless computing allows developers to run applications without managing infrastructure. Examples include AWS Lambda, Azure Functions."
+        ]
+    },
+    {
+        "id": 6,
+        "tool": "Cloud",
+        "question": "What is virtualization in cloud computing?",
+        "answer": "Virtualization is creating virtual instances of servers, storage, or networks to optimize utilization.",
+        "options": [
+            "A physical server kept on-premises only.",
+            "Virtualization is creating virtual instances of servers, storage, or networks to optimize utilization.",
+            "A networking concept unrelated to cloud.",
+            "A mobile-only feature unrelated to cloud."
+        ]
+    },
+    {
+        "id": 7,
+        "tool": "Cloud",
+        "question": "What is multi-cloud?",
+        "answer": "Using multiple cloud service providers for redundancy, optimization, and avoiding vendor lock-in.",
+        "options": [
+            "A physical server kept on-premises only.",
+            "A networking concept unrelated to cloud.",
+            "Using multiple cloud service providers for redundancy, optimization, and avoiding vendor lock-in.",
+            "A mobile-only feature unrelated to cloud."
+        ]
+    },
+    {
+        "id": 8,
+        "tool": "Cloud",
+        "question": "What are some common cloud deployment models?",
+        "answer": "Community Cloud, Hybrid Cloud, Public Cloud",
+        "options": [
+            "A physical server kept on-premises only.",
+            "A networking concept unrelated to cloud.",
+            "Community Cloud, Hybrid Cloud, Public Cloud",
+            "A mobile-only feature unrelated to cloud."
+        ]
+    },
+    {
+        "id": 9,
+        "tool": "Cloud",
+        "question": "What is the difference between vertical and horizontal scaling?",
+        "answer": "Vertical Scaling = add resources to one server. Horizontal Scaling = add more servers.",
+        "options": [
+            "A mobile-only feature unrelated to cloud.",
+            "Vertical Scaling = add resources to one server. Horizontal Scaling = add more servers.",
+            "A physical server kept on-premises only.",
+            "A networking concept unrelated to cloud."
+        ]
+    },
+    {
+        "id": 10,
+        "tool": "Cloud",
+        "question": "What is an Availability Zone (AZ)?",
+        "answer": "A physically separate data center within a region for fault tolerance and high availability.",
+        "options": [
+            "A physical server kept on-premises only.",
+            "A mobile-only feature unrelated to cloud.",
+            "A physically separate data center within a region for fault tolerance and high availability.",
+            "A networking concept unrelated to cloud."
+        ]
+    },
+    {
+        "id": 11,
+        "tool": "Cloud",
+        "question": "What is the Shared Responsibility Model in cloud security?",
+        "answer": "Provider secures infrastructure, customer secures applications, data, and access.",
+        "options": [
+            "A physical server kept on-premises only.",
+            "Provider secures infrastructure, customer secures applications, data, and access.",
+            "A networking concept unrelated to cloud.",
+            "A mobile-only feature unrelated to cloud."
+        ]
+    },
+    {
+        "id": 12,
+        "tool": "Cloud",
+        "question": "What is a Virtual Private Cloud (VPC)?",
+        "answer": "An isolated cloud network with custom subnets, IPs, and security groups.",
+        "options": [
+            "A mobile-only feature unrelated to cloud.",
+            "A networking concept unrelated to cloud.",
+            "A physical server kept on-premises only.",
+            "An isolated cloud network with custom subnets, IPs, and security groups."
+        ]
+    },
+    {
+        "id": 13,
+        "tool": "Cloud",
+        "question": "What is an Elastic Load Balancer (ELB)?",
+        "answer": "Distributes incoming traffic across multiple servers to ensure availability.",
+        "options": [
+            "A mobile-only feature unrelated to cloud.",
+            "A networking concept unrelated to cloud.",
+            "Distributes incoming traffic across multiple servers to ensure availability.",
+            "A physical server kept on-premises only."
+        ]
+    },
+    {
+        "id": 14,
+        "tool": "Cloud",
+        "question": "What is Object Storage in the cloud?",
+        "answer": "Stores data as objects. Examples: Amazon S3, Azure Blob.",
+        "options": [
+            "A networking concept unrelated to cloud.",
+            "A mobile-only feature unrelated to cloud.",
+            "A physical server kept on-premises only.",
+            "Stores data as objects. Examples: Amazon S3, Azure Blob."
+        ]
+    },
+    {
+        "id": 15,
+        "tool": "Cloud",
+        "question": "What is Block Storage in cloud computing?",
+        "answer": "Stores data in fixed blocks, often for databases. Examples: AWS EBS, Azure Disks.",
+        "options": [
+            "A networking concept unrelated to cloud.",
+            "A physical server kept on-premises only.",
+            "A mobile-only feature unrelated to cloud.",
+            "Stores data in fixed blocks, often for databases. Examples: AWS EBS, Azure Disks."
+        ]
+    },
+    {
+        "id": 16,
+        "tool": "Cloud",
+        "question": "What is a Content Delivery Network (CDN)?",
+        "answer": "A distributed network caching content near users for faster delivery.",
+        "options": [
+            "A physical server kept on-premises only.",
+            "A mobile-only feature unrelated to cloud.",
+            "A distributed network caching content near users for faster delivery.",
+            "A networking concept unrelated to cloud."
+        ]
+    },
+    {
+        "id": 17,
+        "tool": "Cloud",
+        "question": "What is an IAM role in cloud security?",
+        "answer": "IAM role provides permissions to services without hardcoding credentials.",
+        "options": [
+            "A mobile-only feature unrelated to cloud.",
+            "IAM role provides permissions to services without hardcoding credentials.",
+            "A networking concept unrelated to cloud.",
+            "A physical server kept on-premises only."
+        ]
+    },
+    {
+        "id": 18,
+        "tool": "Cloud",
+        "question": "What is CloudFormation in AWS?",
+        "answer": "Infrastructure as Code service to automate provisioning with templates.",
+        "options": [
+            "A networking concept unrelated to cloud.",
+            "A mobile-only feature unrelated to cloud.",
+            "A physical server kept on-premises only.",
+            "Infrastructure as Code service to automate provisioning with templates."
+        ]
+    },
+    {
+        "id": 19,
+        "tool": "Cloud",
+        "question": "What is Google Kubernetes Engine (GKE)?",
+        "answer": "Google Cloud's managed Kubernetes service for container deployment.",
+        "options": [
+            "A mobile-only feature unrelated to cloud.",
+            "A networking concept unrelated to cloud.",
+            "A physical server kept on-premises only.",
+            "Google Cloud's managed Kubernetes service for container deployment."
+        ]
+    },
+    {
+        "id": 20,
+        "tool": "Cloud",
+        "question": "What is Azure DevOps?",
+        "answer": "A set of CI/CD and DevOps tools for building, testing, and deploying applications.",
+        "options": [
+            "A mobile-only feature unrelated to cloud.",
+            "A physical server kept on-premises only.",
+            "A networking concept unrelated to cloud.",
+            "A set of CI/CD and DevOps tools for building, testing, and deploying applications."
+        ]
+    },
+    {
+        "id": 21,
+        "tool": "Cloud",
+        "question": "What is a cloud region?",
+        "answer": "A geographic area where cloud providers host data centers with AZs.",
+        "options": [
+            "A mobile-only feature unrelated to cloud.",
+            "A physical server kept on-premises only.",
+            "A networking concept unrelated to cloud.",
+            "A geographic area where cloud providers host data centers with AZs."
+        ]
+    },
+    {
+        "id": 22,
+        "tool": "Cloud",
+        "question": "How does AWS Lambda differ from EC2?",
+        "answer": "Lambda = serverless, event-driven, pay per execution. EC2 = VM with manual scaling.",
+        "options": [
+            "A physical server kept on-premises only.",
+            "A mobile-only feature unrelated to cloud.",
+            "Lambda = serverless, event-driven, pay per execution. EC2 = VM with manual scaling.",
+            "A networking concept unrelated to cloud."
+        ]
+    },
+    {
+        "id": 23,
+        "tool": "Cloud",
+        "question": "What are Reserved Instances in AWS?",
+        "answer": "Discounted instances committed for 1\u20133 years. Types: Standard, Convertible, Scheduled.",
+        "options": [
+            "A physical server kept on-premises only.",
+            "A networking concept unrelated to cloud.",
+            "A mobile-only feature unrelated to cloud.",
+            "Discounted instances committed for 1\u20133 years. Types: Standard, Convertible, Scheduled."
+        ]
+    },
+    {
+        "id": 24,
+        "tool": "Cloud",
+        "question": "How do you secure data in cloud storage?",
+        "answer": "Encryption, IAM access controls, versioning, and auditing.",
+        "options": [
+            "A networking concept unrelated to cloud.",
+            "A mobile-only feature unrelated to cloud.",
+            "A physical server kept on-premises only.",
+            "Encryption, IAM access controls, versioning, and auditing."
+        ]
+    },
+    {
+        "id": 25,
+        "tool": "Cloud",
+        "question": "What is the difference between Kubernetes and Docker Swarm?",
+        "answer": "Kubernetes = complex, enterprise orchestration. Swarm = simpler, lightweight orchestration.",
+        "options": [
+            "A mobile-only feature unrelated to cloud.",
+            "Kubernetes = complex, enterprise orchestration. Swarm = simpler, lightweight orchestration.",
+            "A networking concept unrelated to cloud.",
+            "A physical server kept on-premises only."
+        ]
+    },
+    {
+        "id": 26,
+        "tool": "Cloud",
+        "question": "What is a Stateful vs. Stateless application in the cloud?",
+        "answer": "Stateless = no session data (e.g. APIs). Stateful = keeps user state (e.g. DBs).",
+        "options": [
+            "A mobile-only feature unrelated to cloud.",
+            "Stateless = no session data (e.g. APIs). Stateful = keeps user state (e.g. DBs).",
+            "A networking concept unrelated to cloud.",
+            "A physical server kept on-premises only."
+        ]
+    },
+    {
+        "id": 27,
+        "tool": "Cloud",
+        "question": "What is auto-scaling, and how does it work?",
+        "answer": "Automatically adds/removes instances based on load. Types: Horizontal & Vertical scaling.",
+        "options": [
+            "A networking concept unrelated to cloud.",
+            "Automatically adds/removes instances based on load. Types: Horizontal & Vertical scaling.",
+            "A physical server kept on-premises only.",
+            "A mobile-only feature unrelated to cloud."
+        ]
+    },
+    {
+        "id": 28,
+        "tool": "Cloud",
+        "question": "What is Terraform, and how does it help in cloud automation?",
+        "answer": "IaC tool to define/provision multi-cloud infrastructure with declarative configs.",
+        "options": [
+            "A mobile-only feature unrelated to cloud.",
+            "IaC tool to define/provision multi-cloud infrastructure with declarative configs.",
+            "A networking concept unrelated to cloud.",
+            "A physical server kept on-premises only."
+        ]
+    },
+    {
+        "id": 29,
+        "tool": "Cloud",
+        "question": "How do you handle logging in a cloud environment?",
+        "answer": "Centralized logging with CloudWatch, Azure Monitor, GCP Stackdriver.",
+        "options": [
+            "A physical server kept on-premises only.",
+            "Centralized logging with CloudWatch, Azure Monitor, GCP Stackdriver.",
+            "A mobile-only feature unrelated to cloud.",
+            "A networking concept unrelated to cloud."
+        ]
+    },
+    {
+        "id": 30,
+        "tool": "Cloud",
+        "question": "What is a Bastion Host, and why is it used?",
+        "answer": "A public server to securely SSH into private cloud resources.",
+        "options": [
+            "A mobile-only feature unrelated to cloud.",
+            "A physical server kept on-premises only.",
+            "A public server to securely SSH into private cloud resources.",
+            "A networking concept unrelated to cloud."
+        ]
+    },
+    {
+        "id": 31,
+        "tool": "Cloud",
+        "question": "What is a Service Level Agreement (SLA) in cloud computing?",
+        "answer": "A contract defining uptime, support, and penalties if not met.",
+        "options": [
+            "A mobile-only feature unrelated to cloud.",
+            "A contract defining uptime, support, and penalties if not met.",
+            "A networking concept unrelated to cloud.",
+            "A physical server kept on-premises only."
+        ]
+    },
+    {
+        "id": 32,
+        "tool": "Cloud",
+        "question": "How do you optimize cloud costs?",
+        "answer": "Use Reserved/Spot instances, auto-scaling, monitoring, and right-sizing.",
+        "options": [
+            "A networking concept unrelated to cloud.",
+            "A mobile-only feature unrelated to cloud.",
+            "Use Reserved/Spot instances, auto-scaling, monitoring, and right-sizing.",
+            "A physical server kept on-premises only."
+        ]
+    },
+    {
+        "id": 33,
+        "tool": "Cloud",
+        "question": "What is Kubernetes federation?",
+        "answer": "Managing multiple Kubernetes clusters as one for HA and multi-cloud.",
+        "options": [
+            "A mobile-only feature unrelated to cloud.",
+            "Managing multiple Kubernetes clusters as one for HA and multi-cloud.",
+            "A physical server kept on-premises only.",
+            "A networking concept unrelated to cloud."
+        ]
+    },
+    {
+        "id": 34,
+        "tool": "Cloud",
+        "question": "How does Chaos Engineering apply to cloud environments?",
+        "answer": "Injecting failures to test system resilience (e.g. Netflix Simian Army).",
+        "options": [
+            "A networking concept unrelated to cloud.",
+            "Injecting failures to test system resilience (e.g. Netflix Simian Army).",
+            "A physical server kept on-premises only.",
+            "A mobile-only feature unrelated to cloud."
+        ]
+    },
+    {
+        "id": 35,
+        "tool": "Cloud",
+        "question": "What is a Kubernetes operator?",
+        "answer": "Automates management of complex stateful apps in Kubernetes.",
+        "options": [
+            "A networking concept unrelated to cloud.",
+            "Automates management of complex stateful apps in Kubernetes.",
+            "A mobile-only feature unrelated to cloud.",
+            "A physical server kept on-premises only."
+        ]
+    },
+    {
+        "id": 36,
+        "tool": "Cloud",
+        "question": "How do you implement multi-region deployments?",
+        "answer": "Use replication, DNS routing, and failover mechanisms.",
+        "options": [
+            "A networking concept unrelated to cloud.",
+            "A mobile-only feature unrelated to cloud.",
+            "Use replication, DNS routing, and failover mechanisms.",
+            "A physical server kept on-premises only."
+        ]
+    },
+    {
+        "id": 37,
+        "tool": "Cloud",
+        "question": "What is a Cloud Access Security Broker (CASB)?",
+        "answer": "Security layer enforcing compliance, threat protection, and data security.",
+        "options": [
+            "A physical server kept on-premises only.",
+            "A mobile-only feature unrelated to cloud.",
+            "A networking concept unrelated to cloud.",
+            "Security layer enforcing compliance, threat protection, and data security."
+        ]
+    },
+    {
+        "id": 38,
+        "tool": "Cloud",
+        "question": "How do you ensure compliance in cloud environments?",
+        "answer": "Use frameworks (HIPAA, GDPR), auditing, and monitoring tools.",
+        "options": [
+            "A physical server kept on-premises only.",
+            "A networking concept unrelated to cloud.",
+            "Use frameworks (HIPAA, GDPR), auditing, and monitoring tools.",
+            "A mobile-only feature unrelated to cloud."
+        ]
+    },
+    {
+        "id": 39,
+        "tool": "Cloud",
+        "question": "What is zero-trust security in cloud environments?",
+        "answer": "No implicit trust. Strict identity verification for all access.",
+        "options": [
+            "A mobile-only feature unrelated to cloud.",
+            "A networking concept unrelated to cloud.",
+            "A physical server kept on-premises only.",
+            "No implicit trust. Strict identity verification for all access."
+        ]
+    },
+    {
+        "id": 40,
+        "tool": "Cloud",
+        "question": "How does serverless architecture improve scalability?",
+        "answer": "Auto-scales instantly with demand, no pre-provisioning needed.",
+        "options": [
+            "A physical server kept on-premises only.",
+            "A networking concept unrelated to cloud.",
+            "A mobile-only feature unrelated to cloud.",
+            "Auto-scales instantly with demand, no pre-provisioning needed."
+        ]
+    },
+    {
+        "id": 41,
+        "tool": "Cloud",
+        "question": "What is an egress charge in cloud pricing?",
+        "answer": "Fees for data transfer leaving the cloud provider's network.",
+        "options": [
+            "A physical server kept on-premises only.",
+            "Fees for data transfer leaving the cloud provider's network.",
+            "A networking concept unrelated to cloud.",
+            "A mobile-only feature unrelated to cloud."
+        ]
+    },
+    {
+        "id": 42,
+        "tool": "Cloud",
+        "question": "How do you prevent DDoS attacks in the cloud?",
+        "answer": "Use WAFs, DDoS protection, rate limiting, and ACLs.",
+        "options": [
+            "A mobile-only feature unrelated to cloud.",
+            "A physical server kept on-premises only.",
+            "A networking concept unrelated to cloud.",
+            "Use WAFs, DDoS protection, rate limiting, and ACLs."
+        ]
+    },
+    {
+        "id": 43,
+        "tool": "Cloud",
+        "question": "What are the best practices for cloud security?",
+        "answer": "Least privilege IAM, encryption, MFA, logging, monitoring.",
+        "options": [
+            "A physical server kept on-premises only.",
+            "A networking concept unrelated to cloud.",
+            "Least privilege IAM, encryption, MFA, logging, monitoring.",
+            "A mobile-only feature unrelated to cloud."
+        ]
+    },
+    {
+        "id": 44,
+        "tool": "Cloud",
+        "question": "What are the risks of vendor lock-in, and how do you mitigate them?",
+        "answer": "Dependency on one provider. Mitigate with multi-cloud and open-source tools.",
+        "options": [
+            "A networking concept unrelated to cloud.",
+            "A mobile-only feature unrelated to cloud.",
+            "Dependency on one provider. Mitigate with multi-cloud and open-source tools.",
+            "A physical server kept on-premises only."
+        ]
+    },
+    {
+        "id": 45,
+        "tool": "Cloud",
+        "question": "What is Kubernetes pod affinity and anti-affinity?",
+        "answer": "Rules controlling pod placement for performance or HA.",
+        "options": [
+            "A networking concept unrelated to cloud.",
+            "A mobile-only feature unrelated to cloud.",
+            "A physical server kept on-premises only.",
+            "Rules controlling pod placement for performance or HA."
+        ]
+    },
+    {
+        "id": 46,
+        "tool": "Cloud",
+        "question": "What is confidential computing in the cloud?",
+        "answer": "Encrypts data during processing with TEEs. Examples: AWS Nitro Enclaves.",
+        "options": [
+            "A networking concept unrelated to cloud.",
+            "A physical server kept on-premises only.",
+            "Encrypts data during processing with TEEs. Examples: AWS Nitro Enclaves.",
+            "A mobile-only feature unrelated to cloud."
+        ]
+    },
+    {
+        "id": 47,
+        "tool": "Cloud",
+        "question": "What is a policy-as-code approach in cloud security?",
+        "answer": "Automating compliance/security rules using code. Tools: OPA, Sentinel.",
+        "options": [
+            "A physical server kept on-premises only.",
+            "A networking concept unrelated to cloud.",
+            "A mobile-only feature unrelated to cloud.",
+            "Automating compliance/security rules using code. Tools: OPA, Sentinel."
+        ]
+    },
+    {
+        "id": 48,
+        "tool": "Cloud",
+        "question": "How do you implement cloud governance?",
+        "answer": "Control IAM, budgets, compliance automation with policies.",
+        "options": [
+            "A networking concept unrelated to cloud.",
+            "Control IAM, budgets, compliance automation with policies.",
+            "A mobile-only feature unrelated to cloud.",
+            "A physical server kept on-premises only."
+        ]
+    }
 ]
