@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import questionsData from "./questions.json";
-import { buildInfo } from "./buildInfo"; // Import from the generated file
 import "./App.css";
 
 function App() {
@@ -10,6 +9,23 @@ function App() {
   const [score, setScore] = useState({ correct: 0, attempted: 0 });
   const [selectedOption, setSelectedOption] = useState(null);
   const [askedQuestions, setAskedQuestions] = useState([]);
+  const [buildInfo, setBuildInfo] = useState(null);
+
+  useEffect(() => {
+    // Check for build info in global variable
+    if (window.BUILD_INFO) {
+      console.log('Build info found:', window.BUILD_INFO);
+      setBuildInfo(window.BUILD_INFO);
+    } else {
+      console.log('Build info not found in window.BUILD_INFO');
+      // Fallback to current time
+      setBuildInfo({
+        time: new Date().toLocaleString() + ' (fallback)',
+        commit: 'unknown',
+        run: 'unknown'
+      });
+    }
+  }, []);
 
   const loadQuestion = () => {
     const filtered = questionsData.filter(
@@ -95,11 +111,17 @@ function App() {
         </div>
       )}
 
-      {/* Build/deploy date - now using imported buildInfo */}
+      {/* Build info display */}
       <p className="build-time">
-        Last deployed: {buildInfo.time}
-        {buildInfo.commit && <span> (Commit: {buildInfo.commit})</span>}
-        {buildInfo.run && <span> - Build #{buildInfo.run}</span>}
+        {buildInfo ? (
+          <>
+            Last deployed: {buildInfo.time}
+            {buildInfo.commit && buildInfo.commit !== 'unknown' && <span> (Commit: {buildInfo.commit})</span>}
+            {buildInfo.run && buildInfo.run !== 'unknown' && <span> - Build #{buildInfo.run}</span>}
+          </>
+        ) : (
+          "Loading build info..."
+        )}
       </p>
     </div>
   );
