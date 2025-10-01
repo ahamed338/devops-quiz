@@ -178,8 +178,6 @@
     "id": "helm-006",
     "tool": "Helm",
     "question": "What is Helmfile?",
-    "tool": "Helm",
-    "question": "What is Helmfile?",
     "options": ["A declarative spec for deploying Helm charts", "A Helm chart repository", "A template engine", "A security plugin"],
     "answer": "A declarative spec for deploying Helm charts"
   },

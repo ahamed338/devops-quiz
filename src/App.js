@@ -84,8 +84,9 @@ function App() {
         <option>Kubernetes</option>
         <option>Helm</option>
         <option>Ansible</option>
-        <option>Azure DevOps</option>
-        <option>GitHub</option>
+        <option>Git</option>
+        <option>GitHub Administration</option>
+        <option>Datadog</option>
       </select>
 
       <p className="score">
@@ -112,17 +113,17 @@ function App() {
         </div>
       )}
 
-      {buildTime ? (
-        <p className="build-time">
-          Last updated: {buildTime}
-          {commitSha && <span> — {commitSha}</span>}
-          {runNumber && <span> (run #{runNumber})</span>}
-        </p>
-      ) : (
-        <p className="build-time">
-          Build time not available (client fallback): {localTime}
-        </p>
-      )}
+      <p className="build-time">
+        {buildTime ? (
+          <>
+            Last updated: {buildTime}
+            {commitSha && <span> — Commit: {commitSha.substring(0, 7)}</span>}
+            {runNumber && <span> (Run #{runNumber})</span>}
+          </>
+        ) : (
+          <>Local time: {localTime}</>
+        )}
+      </p>
     </div>
   );
 }
