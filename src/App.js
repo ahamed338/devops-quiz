@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import questionsData from "./questions.json";
+import { buildInfo } from "./buildInfo"; // Import the build info
 import "./App.css";
 
 function App() {
@@ -9,25 +10,6 @@ function App() {
   const [score, setScore] = useState({ correct: 0, attempted: 0 });
   const [selectedOption, setSelectedOption] = useState(null);
   const [askedQuestions, setAskedQuestions] = useState([]);
-  const [buildTime, setBuildTime] = useState("");
-  const [commitSha, setCommitSha] = useState("");
-  const [runNumber, setRunNumber] = useState("");
-  const [localTime, setLocalTime] = useState("");
-
-  // Load timestamp from environment set in GitHub Actions
-  useEffect(() => {
-    if (process.env.REACT_APP_BUILD_TIME) {
-      setBuildTime(process.env.REACT_APP_BUILD_TIME);
-    }
-    if (process.env.REACT_APP_COMMIT_SHA) {
-      setCommitSha(process.env.REACT_APP_COMMIT_SHA);
-    }
-    if (process.env.REACT_APP_RUN_NUMBER) {
-      setRunNumber(process.env.REACT_APP_RUN_NUMBER);
-    }
-    // set a local fallback time (useful when build-time isn't injected)
-    setLocalTime(new Date().toLocaleString());
-  }, []);
 
   const loadQuestion = () => {
     const filtered = questionsData.filter(
@@ -113,16 +95,11 @@ function App() {
         </div>
       )}
 
+      {/* Build/deploy date from workflow */}
       <p className="build-time">
-        {buildTime ? (
-          <>
-            Last updated: {buildTime}
-            {commitSha && <span> — Commit: {commitSha.substring(0, 7)}</span>}
-            {runNumber && <span> (Run #{runNumber})</span>}
-          </>
-        ) : (
-          <>Local time: {localTime}</>
-        )}
+        Last deployed: {buildInfo.time}
+        {buildInfo.commit && <span> (Commit: {buildInfo.commit})</span>}
+        {buildInfo.run && <span> - Build #{buildInfo.run}</span>}
       </p>
     </div>
   );

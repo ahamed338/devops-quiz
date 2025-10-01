@@ -25,3 +25,5 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+# Build info file (auto-generated)
+src/buildInfo.js
