@@ -11,17 +11,21 @@ function App() {
   const [askedQuestions, setAskedQuestions] = useState([]);
   const [buildInfo, setBuildInfo] = useState({ time: 'Loading...', commit: '', run: '' });
 
-  // Get available tools from questions data
-  const availableTools = [...new Set(questionsData.map(q => q.tool))];
+  // Hardcoded tools that match your questions.json
+  const availableTools = [
+    "Terraform",
+    "Kubernetes", 
+    "Helm",
+    "Ansible",
+    "Git",
+    "GitHub Administration",
+    "Datadog"
+  ];
   
   useEffect(() => {
-    // Check for build info in multiple ways
     if (window.BUILD_INFO) {
-      console.log('Build info found in window:', window.BUILD_INFO);
       setBuildInfo(window.BUILD_INFO);
     } else {
-      console.log('No build info found, using fallback');
-      // Use a simple fallback that will always show
       setBuildInfo({
         time: new Date().toLocaleString() + ' (Live)',
         commit: 'dev',
@@ -110,7 +114,6 @@ function App() {
         </div>
       )}
 
-      {/* Build info display - will always show something */}
       <p className="build-time">
         {buildInfo.time}
         {buildInfo.commit && buildInfo.commit !== 'dev' && <span> (Commit: {buildInfo.commit})</span>}
