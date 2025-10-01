@@ -5,6 +5,12 @@ on:
     branches:
       - main
 
+# ADD THIS PERMISSIONS BLOCK - this is the key fix
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
