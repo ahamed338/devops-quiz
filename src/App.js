@@ -12,6 +12,7 @@ function App() {
   const [buildTime, setBuildTime] = useState("");
   const [commitSha, setCommitSha] = useState("");
   const [runNumber, setRunNumber] = useState("");
+  const [localTime, setLocalTime] = useState("");
 
   // Load timestamp from environment set in GitHub Actions
   useEffect(() => {
@@ -24,6 +25,8 @@ function App() {
     if (process.env.REACT_APP_RUN_NUMBER) {
       setRunNumber(process.env.REACT_APP_RUN_NUMBER);
     }
+    // set a local fallback time (useful when build-time isn't injected)
+    setLocalTime(new Date().toLocaleString());
   }, []);
 
   const loadQuestion = () => {
@@ -109,11 +112,15 @@ function App() {
         </div>
       )}
 
-      {buildTime && (
+      {buildTime ? (
         <p className="build-time">
           Last updated: {buildTime}
           {commitSha && <span> — {commitSha}</span>}
           {runNumber && <span> (run #{runNumber})</span>}
+        </p>
+      ) : (
+        <p className="build-time">
+          Build time not available (client fallback): {localTime}
         </p>
       )}
     </div>
