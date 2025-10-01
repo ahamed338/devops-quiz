@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import questionsData from "./questions.json";
+import { buildInfo } from "./buildInfo"; // Import from the generated file
 import "./App.css";
 
 function App() {
@@ -9,14 +10,6 @@ function App() {
   const [score, setScore] = useState({ correct: 0, attempted: 0 });
   const [selectedOption, setSelectedOption] = useState(null);
   const [askedQuestions, setAskedQuestions] = useState([]);
-  const [buildInfo, setBuildInfo] = useState({ time: '', commit: '', run: '' });
-
-  // Load build info from the global variable
-  useEffect(() => {
-    if (window.BUILD_INFO) {
-      setBuildInfo(window.BUILD_INFO);
-    }
-  }, []);
 
   const loadQuestion = () => {
     const filtered = questionsData.filter(
@@ -102,17 +95,11 @@ function App() {
         </div>
       )}
 
-      {/* Build/deploy date from workflow */}
+      {/* Build/deploy date - now using imported buildInfo */}
       <p className="build-time">
-        {buildInfo.time ? (
-          <>
-            Last deployed: {buildInfo.time}
-            {buildInfo.commit && <span> (Commit: {buildInfo.commit})</span>}
-            {buildInfo.run && <span> - Build #{buildInfo.run}</span>}
-          </>
-        ) : (
-          "Loading build info..."
-        )}
+        Last deployed: {buildInfo.time}
+        {buildInfo.commit && <span> (Commit: {buildInfo.commit})</span>}
+        {buildInfo.run && <span> - Build #{buildInfo.run}</span>}
       </p>
     </div>
   );

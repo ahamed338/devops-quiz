@@ -5,7 +5,6 @@ on:
     branches:
       - main
 
-# ADD THIS PERMISSIONS BLOCK - this is the key fix
 permissions:
   contents: write
   pages: write
@@ -26,10 +25,22 @@ jobs:
       - name: Install dependencies
         run: npm ci
         
-      - name: Create public build info file
+      - name: Create build info script
         run: |
           BUILD_TIME=$(date -u +'%Y-%m-%d %H:%M:%S UTC')
-          echo "window.BUILD_INFO = { time: '$BUILD_TIME', commit: '$(git rev-parse --short HEAD)', run: '${{ github.run_number }}' };" > public/build-info.js
+          COMMIT_SHA=$(git rev-parse --short HEAD)
+          RUN_NUMBER=${{ github.run_number }}
+          
+          # Create a script file that will be executed during build
+          cat > src/buildInfo.js << EOF
+          // Auto-generated build info
+          export const buildInfo = {
+            time: '$BUILD_TIME',
+            commit: '$COMMIT_SHA', 
+            run: '$RUN_NUMBER'
+          };
+          EOF
+          echo "Build info script created"
           
       - name: Build app
         run: npm run build
