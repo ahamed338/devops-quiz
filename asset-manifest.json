@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/devops-quiz/static/css/main.a4d16ba1.css",
-    "main.js": "/devops-quiz/static/js/main.6d995fbc.js",
+    "main.js": "/devops-quiz/static/js/main.5f03d367.js",
     "index.html": "/devops-quiz/index.html",
     "main.a4d16ba1.css.map": "/devops-quiz/static/css/main.a4d16ba1.css.map",
-    "main.6d995fbc.js.map": "/devops-quiz/static/js/main.6d995fbc.js.map"
+    "main.5f03d367.js.map": "/devops-quiz/static/js/main.5f03d367.js.map"
   },
   "entrypoints": [
     "static/css/main.a4d16ba1.css",
-    "static/js/main.6d995fbc.js"
+    "static/js/main.5f03d367.js"
   ]
 }
